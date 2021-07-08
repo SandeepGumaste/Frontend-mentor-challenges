@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'kumbh sans',sans-serif;
+    color: hsl(238, 29%, 16%);
+    background: linear-gradient(90deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+main{
+    background: white;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    min-width: 60vw;
+    max-width: 60vw;
+    height: 60vh;
+    
+    border-radius: 1rem;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.438);
+    .faqs{
+        font-size: 12px;
+        padding: 4rem 5rem 0 0rem;
+        h1{
+            font-size: 30px;
+            margin-bottom: 2rem;
+        }
+        img{
+            margin-left: 1rem;
+        }
+
+        .faq{
+            cursor: pointer;
+            padding: 1rem 0;
+            border-bottom: 1px solid hsl(240, 5%, 91%);
+        }
+        
+        .ques{
+            display: flex;
+            color: hsl(240, 6%, 50%);
+            align-items: center;
+            justify-content: space-between;
+            h3{
+                font-weight: 700;
+            }
+
+        }
+        .ans{
+            padding-top: 0.5rem;
+            max-height: 0;
+            display: none;
+            font-weight: 700;
+            color:hsl(240, 6%, 50%);
+            line-height: 1rem;
+        }
+        .faq:hover{
+            h3{
+                color:hsl(238, 29%, 16%) ;
+            }
+        }
+        .active{
+            cursor: pointer;
+            h3{
+                color: hsl(238, 29%, 16%);
+            }
+            img{
+                transform: rotate(180deg);
+            }
+            .ans{
+                display: flex;
+                max-height: 100%;
+                color: hsl(240, 6%, 50%);
+            }
+            
+        }
+
+    }
+    
+    .imgs{
+        
+        position: relative;
+        .img_inner{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            background-image: url("/faq-accordion-card-main/images/bg-pattern-desktop.svg");
+            background-repeat: no-repeat;
+            background-position-x: 114%;
+            background-position-y: 70%;
+        }
+
+        .box{
+            width: 50%;
+            position: absolute;
+            transform: translate(-50%,-130%)
+        }
+
+        .laptop{
+            transform: translateX(-15%);
+        }
+    }
+}
+

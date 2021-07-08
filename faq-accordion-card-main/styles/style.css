@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  font-family: 'kumbh sans',sans-serif;
+  color: #1d1e35;
+  background: -webkit-gradient(linear, left top, right top, from(#af67e9), to(#6565e7));
+  background: linear-gradient(90deg, #af67e9, #6565e7);
+}
+
+main {
+  background: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  min-width: 60vw;
+  max-width: 60vw;
+  height: 60vh;
+  border-radius: 1rem;
+  -webkit-box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.438);
+          box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.438);
+}
+
+main .faqs {
+  font-size: 12px;
+  padding: 4rem 5rem 0 0rem;
+}
+
+main .faqs h1 {
+  font-size: 30px;
+  margin-bottom: 2rem;
+}
+
+main .faqs img {
+  margin-left: 1rem;
+}
+
+main .faqs .faq {
+  cursor: pointer;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e7e7e9;
+}
+
+main .faqs .ques {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #787887;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .faqs .ques h3 {
+  font-weight: 700;
+}
+
+main .faqs .ans {
+  padding-top: 0.5rem;
+  max-height: 0;
+  display: none;
+  font-weight: 700;
+  color: #787887;
+  line-height: 1rem;
+}
+
+main .faqs .faq:hover h3 {
+  color: #1d1e35;
+}
+
+main .faqs .active {
+  cursor: pointer;
+}
+
+main .faqs .active h3 {
+  color: #1d1e35;
+}
+
+main .faqs .active img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+main .faqs .active .ans {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 100%;
+  color: #787887;
+}
+
+main .imgs {
+  position: relative;
+}
+
+main .imgs .img_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-image: url("/faq-accordion-card-main/images/bg-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-position-x: 114%;
+  background-position-y: 70%;
+}
+
+main .imgs .box {
+  width: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -130%);
+          transform: translate(-50%, -130%);
+}
+
+main .imgs .laptop {
+  -webkit-transform: translateX(-15%);
+          transform: translateX(-15%);
+}
+/*# sourceMappingURL=style.css.map */
