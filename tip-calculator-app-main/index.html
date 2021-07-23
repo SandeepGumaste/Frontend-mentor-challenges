@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>SPLI <br> TTER</h1>
+    <div class="container">
+      <div class="inp">
+        <section class='bill ip'>
+          <label for="bill">Bill </label>
+          <input type="number" id="bill" name="bill" placeholder='0.00' required/>
+        </section>
+        <label for="tip">Select Tip%</label>
+        <section class="tip" id='tip'>
+          <button class="btn fp" value="5">5%</button>
+          <button class="btn tp" value="10">10%</button>
+          <button class="btn fip"value="15">15%</button>
+          <button class="btn tfp"value="25">25%</button>
+          <button class="fifp"value="50">50%</button>
+          <input type="number" placeholder="Custom" class="btn cust" value="" id="cust" name="name" onchange="calculate(bill.value,cust.value)" min='0'/>
+        </section>
+        <section class="people ip">
+          <label for="peep">Number of People</label>
+          <input type="number"value="1" min='1' id="peep" required/>
+        </section>
+      </div>
+      <div class="output">
+        <div class="tt">
+          <div class="tipamt">
+            <div class="info">
+              <h4>Tip Amount</h4>
+              <p>/ person</p>
+            </div>
+            <div class="val pp">$<span id='pp'>0.00</span></div>
+          </div>
+          <div class="totamt">
+            <div class="info">
+              <h4>Total</h4>
+              <p>/ person</p>
+            </div>
+            <div class="val tp">$<span id = 'tp'>0.00</span></div>
+          </div>
+        </div>
+        <button class="reset" onclick="reset()">RESET</button>
+      </div>
+    </div>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="./app/app.js"></script>
+</body>
+</html>

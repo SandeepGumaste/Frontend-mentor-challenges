@@ -150,4 +150,34 @@ main .imgs .laptop {
   -webkit-transform: translateX(-15%);
           transform: translateX(-15%);
 }
+
+@media screen and (max-width: 800px) {
+  body {
+    padding: 0 2rem;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .imgs {
+    position: absolute;
+  }
+  .imgs .img_inner {
+    display: none;
+  }
+  main {
+    padding: 0 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 70vh;
+    min-width: 100%;
+  }
+  main .faqs {
+    padding: 0;
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=style.css.map */

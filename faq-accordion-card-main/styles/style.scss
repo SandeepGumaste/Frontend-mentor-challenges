@@ -112,3 +112,29 @@ main{
     }
 }
 
+@media screen and (max-width:800px){
+    body{
+        padding: 0 2rem;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .imgs{
+        position: absolute;
+        .img_inner {
+            display: none;
+        }
+    }
+    main{
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: column;
+        height: 70vh;
+        min-width: 100%;
+        .faqs{
+            padding: 0;
+            width: 100%;
+        }
+    }
+   
+}
+

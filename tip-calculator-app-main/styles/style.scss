@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Space Mono', monospace;
+    background: hsl(185,41,83);
+    color: hsl(186, 14%, 43%);
+    font-weight: bold;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    height: 70%;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    font-size: 24px;
+    .ip{
+        display: flex;
+        flex-direction: column;
+        input{
+            height: 3rem;
+            text-align: right;
+            padding: 0 1rem;
+            font-family: 'Space Mono', monospace;
+            font-weight: bold;
+        }
+    }
+    .inp{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-right: 2rem;
+    }
+    .tip{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 1rem;
+        .btn{
+            padding: 1rem;
+        }
+    }
+    .output{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        background: hsl(183, 100%, 15%);
+        padding: 1rem;
+        color: hsl(185, 41%, 84%);
+        border-radius: 1rem;
+        .tipamt,.totamt{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .val{
+                font-size: 30px;
+                font-weight: normal;
+            }
+            .info{
+                font-size: 18px;
+                p{
+
+                }
+            }
+        }
+    }
+}
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
