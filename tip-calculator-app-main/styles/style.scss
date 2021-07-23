@@ -18,6 +18,7 @@ body{
     background-image: url(/tip-calculator-app-main/images/logo.svg);
     background-repeat: no-repeat;
     background-position: 50% 3rem;
+    width: 100vw;
 }
 main{
     display: flex;
@@ -26,6 +27,7 @@ main{
     flex-direction: column;
     width: 60%;
     height: 60%;
+    padding-top: 3rem;
 
 }
 .container{
@@ -148,4 +150,24 @@ input::-webkit-inner-spin-button {
 }
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+@media screen and (max-width:900px){
+    main{
+        width: 100vw;
+        min-height: 100vh;
+        margin-top: 15rem;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,1fr);
+        width: 100%;
+        .inp{
+            .cust{
+                width: 5rem;
+            }
+        }
+    }
+
 }
