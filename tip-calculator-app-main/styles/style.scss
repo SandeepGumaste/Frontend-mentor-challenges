@@ -15,6 +15,9 @@ body{
     background: hsl(185,41,83);
     color: hsl(186, 14%, 43%);
     font-weight: bold;
+    background-image: url(/tip-calculator-app-main/images/logo.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 3rem;
 }
 main{
     display: flex;
@@ -22,7 +25,8 @@ main{
     align-items: center;
     flex-direction: column;
     width: 60%;
-    height: 70%;
+    height: 60%;
+
 }
 .container{
     width: 100%;
@@ -37,11 +41,26 @@ main{
         display: flex;
         flex-direction: column;
         input{
-            height: 3rem;
             text-align: right;
-            padding: 0 1rem;
+            padding: 1rem;
+            font-size: 18px;
             font-family: 'Space Mono', monospace;
             font-weight: bold;
+            border: none;
+            outline: none;
+            background-color: hsl(180,37,96);
+            border-radius: 0.5rem;
+            color: hsl(183, 100%, 15%);
+        }
+        #bill{
+            background-image: url('/tip-calculator-app-main/images/icon-dollar.svg');
+            background-repeat: no-repeat;
+            background-position: 1rem 50%;
+        }
+        #peep{
+            background-image: url('/tip-calculator-app-main/images/icon-person.svg');
+            background-repeat: no-repeat;
+            background-position: 1rem 50%;
         }
     }
     .inp{
@@ -49,21 +68,38 @@ main{
         flex-direction: column;
         justify-content: space-between;
         padding-right: 2rem;
+        .cust{
+            text-align: center;
+            width: 7.55rem;
+        }
+        .cust::placeholder{
+            font-family: 'Space Mono', monospace;
+            color: hsl(189, 41%, 97%);
+        }
     }
     .tip{
         display: grid;
         grid-template-columns: repeat(3,1fr);
         grid-gap: 1rem;
-        .btn{
-            padding: 1rem;
-        }
+
+    }
+    .btn{
+        padding: 1rem;
+        font-family: 'Space Mono', monospace;
+        color: hsl(189, 41%, 97%);
+        border: none;
+        background-color: hsl(183, 100%, 15%);
+        border-radius: 0.5rem;
+    }
+    .active{
+        background-color: hsl(171,66,45);
     }
     .output{
         display: flex;
         justify-content: space-between;
         flex-direction: column;
         background: hsl(183, 100%, 15%);
-        padding: 1rem;
+        padding: 2rem;
         color: hsl(185, 41%, 84%);
         border-radius: 1rem;
         .tipamt,.totamt{
@@ -77,15 +113,34 @@ main{
             .info{
                 font-size: 18px;
                 p{
-
+                    opacity: 0.5;
                 }
             }
         }
+        .totamt{
+            padding-top: 2rem;
+        }
+        .reset{
+            border: none;
+            background: hsl(184, 14%, 56%);
+            height: 3rem;
+            border-radius: 0.5rem;
+            font-family: 'Space Mono', monospace;
+            font-weight: bold;
+            color: hsl(183, 100%, 15%);
+            font-size: 24px;
+        }
+        .reset:active{
+            transform: scale(0.99);
+        }
     }
 }
-
-
-
+.attribution{
+    margin-top: 1rem;
+    background: hsl(189, 41%, 97%);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
