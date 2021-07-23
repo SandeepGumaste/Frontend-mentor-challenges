@@ -25,6 +25,9 @@ body {
   background: #c2e2e5;
   color: #5e7a7d;
   font-weight: bold;
+  background-image: url(/tip-calculator-app-main/images/logo.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 3rem;
 }
 
 main {
@@ -42,7 +45,7 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 60%;
-  height: 70%;
+  height: 60%;
 }
 
 .container {
@@ -69,11 +72,28 @@ main {
 }
 
 .container .ip input {
-  height: 3rem;
   text-align: right;
-  padding: 0 1rem;
+  padding: 1rem;
+  font-size: 18px;
   font-family: 'Space Mono', monospace;
   font-weight: bold;
+  border: none;
+  outline: none;
+  background-color: #f1f9f9;
+  border-radius: 0.5rem;
+  color: #00494d;
+}
+
+.container .ip #bill {
+  background-image: url("/tip-calculator-app-main/images/icon-dollar.svg");
+  background-repeat: no-repeat;
+  background-position: 1rem 50%;
+}
+
+.container .ip #peep {
+  background-image: url("/tip-calculator-app-main/images/icon-person.svg");
+  background-repeat: no-repeat;
+  background-position: 1rem 50%;
 }
 
 .container .inp {
@@ -90,6 +110,31 @@ main {
   padding-right: 2rem;
 }
 
+.container .inp .cust {
+  text-align: center;
+  width: 7.55rem;
+}
+
+.container .inp .cust::-webkit-input-placeholder {
+  font-family: 'Space Mono', monospace;
+  color: #f4fafa;
+}
+
+.container .inp .cust:-ms-input-placeholder {
+  font-family: 'Space Mono', monospace;
+  color: #f4fafa;
+}
+
+.container .inp .cust::-ms-input-placeholder {
+  font-family: 'Space Mono', monospace;
+  color: #f4fafa;
+}
+
+.container .inp .cust::placeholder {
+  font-family: 'Space Mono', monospace;
+  color: #f4fafa;
+}
+
 .container .tip {
   display: -ms-grid;
   display: grid;
@@ -98,8 +143,17 @@ main {
   grid-gap: 1rem;
 }
 
-.container .tip .btn {
+.container .btn {
   padding: 1rem;
+  font-family: 'Space Mono', monospace;
+  color: #f4fafa;
+  border: none;
+  background-color: #00494d;
+  border-radius: 0.5rem;
+}
+
+.container .active {
+  background-color: #27bea8;
 }
 
 .container .output {
@@ -114,7 +168,7 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   background: #00494d;
-  padding: 1rem;
+  padding: 2rem;
   color: #c5e4e7;
   border-radius: 1rem;
 }
@@ -138,6 +192,37 @@ main {
 
 .container .output .tipamt .info, .container .output .totamt .info {
   font-size: 18px;
+}
+
+.container .output .tipamt .info p, .container .output .totamt .info p {
+  opacity: 0.5;
+}
+
+.container .output .totamt {
+  padding-top: 2rem;
+}
+
+.container .output .reset {
+  border: none;
+  background: #7f9c9f;
+  height: 3rem;
+  border-radius: 0.5rem;
+  font-family: 'Space Mono', monospace;
+  font-weight: bold;
+  color: #00494d;
+  font-size: 24px;
+}
+
+.container .output .reset:active {
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
+}
+
+.attribution {
+  margin-top: 1rem;
+  background: #f4fafa;
+  padding: 1rem;
+  border-radius: 0.5rem;
 }
 
 input::-webkit-outer-spin-button,
