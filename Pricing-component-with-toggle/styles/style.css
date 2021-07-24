@@ -22,16 +22,19 @@ body {
           align-items: center;
   width: 100vw;
   font-family: 'Montserrat', sans-serif;
-  background-image: url();
+  background-color: #f6f6fe;
+  background-image: url(/Pricing-component-with-toggle/images/bg-top.svg);
+  background-repeat: no-repeat;
+  background-position-x: 12rem;
 }
 
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -40,6 +43,11 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
+}
+
+.container h1 {
+  padding-top: 3rem;
+  color: #6d708d;
 }
 
 .anmo {
@@ -53,6 +61,12 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 14rem;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.anmo p {
+  color: #b3b5c6;
 }
 
 .anmo input[type="checkbox"] {
@@ -84,5 +98,136 @@ body {
 
 .anmo input:checked:before {
   left: 2.2rem;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 2rem;
+  max-width: 400px;
+}
+
+.cards .card {
+  width: 100%;
+  background: white;
+  padding: 2rem;
+  border-radius: 0.7rem;
+  margin-bottom: 1.5rem;
+  color: #6d708d;
+  -webkit-box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.205);
+          box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.205);
+}
+
+.cards .card p {
+  border-bottom: 1px solid #b3b5c6;
+  padding: 1rem;
+}
+
+.cards .card h2 {
+  font-size: 55px;
+  color: #494c5f;
+  padding: 1rem;
+  border-bottom: 1px solid #b3b5c6;
+}
+
+.cards .card h4 {
+  padding-top: 1rem;
+}
+
+.cards .card .btn {
+  width: 100%;
+  margin: 2rem 0 0 0;
+  padding: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #f6f6fe;
+  border: none;
+  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(90deg, #a3a8f0, #696fdd);
+  border-radius: 0.5rem;
+}
+
+.cards .card .prof {
+  background: #f6f6fe;
+  color: #6d708d;
+}
+
+.cards .card .btn:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+.cards .pro {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(#a3a8f0, #696fdd);
+  color: #f6f6fe;
+}
+
+.cards .pro h2 {
+  color: #f6f6fe;
+}
+
+@media screen and (min-width: 1100px) {
+  body {
+    background-position-x: right;
+  }
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh;
+    background-image: url("/Pricing-component-with-toggle/images/bg-bottom.svg");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+  }
+  .container h1 {
+    padding-top: 3rem;
+  }
+  .anmo {
+    padding-bottom: 4rem;
+    margin-top: 2rem;
+  }
+  .cards {
+    min-width: 70%;
+    max-width: 800px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: relative;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 1rem 5rem 1rem;
+  }
+  .cards .card {
+    max-width: 33.33%;
+    min-width: 300px;
+  }
+  .cards .pro {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    padding: 3rem 2rem;
+  }
+  .cards .attribution {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

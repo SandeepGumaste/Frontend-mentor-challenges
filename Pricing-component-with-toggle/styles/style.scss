@@ -13,21 +13,33 @@ body{
     align-items: center;
     width: 100vw;
     font-family: 'Montserrat', sans-serif;
-    background-image: url();
+    background-color: hsl(240,80,98);
+    background-image: url(/Pricing-component-with-toggle/images/bg-top.svg);
+    background-repeat: no-repeat;
+    background-position-x: 12rem;
 }
 
 .container{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
     width: 100%;
+    h1{
+        padding-top: 3rem;
+        color: hsl(233, 13%, 49%);
+    }
 }
 .anmo{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 14rem;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    p{
+        color: hsl(234, 14%, 74%);
+    }
     input[type="checkbox"]{
         width: 4rem;
         height: 2rem;
@@ -52,5 +64,104 @@ body{
     input:checked:before{
         left:2.2rem;
     }
+}
 
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 2rem;
+    max-width: 400px;
+    .card{
+        width: 100%;
+        background: hsl(0,0,100);
+        padding:2rem ;
+        border-radius: 0.7rem;
+        margin-bottom: 1.5rem;
+        color: hsl(233, 13%, 49%);
+        box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.205);
+        p{
+            border-bottom: 1px solid hsl(234, 14%, 74%);
+            padding: 1rem;
+        }
+        h2{
+            font-size: 55px;
+            color: hsl(232, 13%, 33%);
+            padding:1rem ;
+            border-bottom: 1px solid hsl(234, 14%, 74%);
+        }
+        h4{
+            padding-top: 1rem;
+        }
+        .btn{
+            width: 100%;
+            margin: 2rem 0 0 0;
+            padding: 1rem;
+            font-family: 'Montserrat', sans-serif;
+            color: hsl(240, 78%, 98%);
+            border: none;
+            background: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+            border-radius: 0.5rem;
+        }
+        .prof{
+            background: hsl(240, 78%, 98%);
+            color: hsl(233, 13%, 49%);
+        }
+        .btn:active{
+            transform: scale(0.98);
+        }
+    }
+    .pro{
+        box-shadow: none;
+        background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+        color: hsl(240, 78%, 98%);
+        h2{
+            color: hsl(240, 78%, 98%);
+        }
+
+    }
+}
+
+@media screen and (min-width: 1100px){
+    body{
+        background-position-x: right;
+    }
+    .container{
+        flex-direction: column;
+        height: 100vh;
+        h1{
+            padding-top: 3rem;
+        }
+        background-image: url('/Pricing-component-with-toggle/images/bg-bottom.svg');
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+    }
+    .anmo{
+        padding-bottom: 4rem;
+        margin-top: 2rem;
+    }
+    .cards{
+        min-width: 70%;
+        max-width: 800px;
+        flex-direction: row;
+        position: relative;
+        justify-content: space-between;
+        padding: 0 1rem 5rem 1rem;
+        .card{
+            max-width: 33.33%;
+            min-width: 300px;
+        }
+        .pro{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%) ;
+            padding: 3rem 2rem;
+        }
+        .attribution{
+            display: none;
+        }
+    }
 }
