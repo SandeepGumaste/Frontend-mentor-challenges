@@ -163,5 +163,15 @@ body{
         .attribution{
             display: none;
         }
+        .btn:hover{
+            background: transparent;
+            color: hsl(232, 13%, 33%);
+            border: 1px solid hsl(232, 13%, 33%);
+            height: 3rem;
+        }
+        .prof:hover{
+            color: hsl(240, 78%, 98%);
+            border-color: hsl(240, 78%, 98%);
+        }
     }
 }

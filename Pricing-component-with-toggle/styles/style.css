@@ -229,5 +229,15 @@ body {
   .cards .attribution {
     display: none;
   }
+  .cards .btn:hover {
+    background: transparent;
+    color: #494c5f;
+    border: 1px solid #494c5f;
+    height: 3rem;
+  }
+  .cards .prof:hover {
+    color: #f6f6fe;
+    border-color: #f6f6fe;
+  }
 }
 /*# sourceMappingURL=style.css.map */
