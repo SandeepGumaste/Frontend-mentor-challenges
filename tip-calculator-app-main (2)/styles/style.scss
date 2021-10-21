@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Space Mono', monospace;
+    background: hsl(185,41,83);
+    color: hsl(186, 14%, 43%);
+    font-weight: bold;
+    background-image: url(/tip-calculator-app-main/images/logo.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 3rem;
+    width: 100vw;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    height: 60%;
+    padding-top: 3rem;
+
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    font-size: 18px;
+    .ip{
+        display: flex;
+        flex-direction: column;
+        input{
+            text-align: right;
+            padding: 1rem;
+            font-size: 18px;
+            font-family: 'Space Mono', monospace;
+            font-weight: bold;
+            border: none;
+            outline: none;
+            background-color: hsl(180,37,96);
+            border-radius: 0.5rem;
+            color: hsl(183, 100%, 15%);
+        }
+        #bill{
+            background-image: url('/tip-calculator-app-main/images/icon-dollar.svg');
+            background-repeat: no-repeat;
+            background-position: 1rem 50%;
+        }
+        #peep{
+            background-image: url('/tip-calculator-app-main/images/icon-person.svg');
+            background-repeat: no-repeat;
+            background-position: 1rem 50%;
+        }
+    }
+    .inp{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-right: 2rem;
+        .cust{
+            text-align: center;
+            background-color: hsl(180,37,96);
+            color: hsl(183, 100%, 15%);
+            width: 7.55rem;
+        }
+        .cust::placeholder{
+            font-family: 'Space Mono', monospace;
+        }
+    }
+    .tip{
+        display: flex;
+        flex-wrap: wrap;
+        grid-gap: 1rem;
+
+    }
+    .btn{
+        padding: 1rem;
+        font-family: 'Space Mono', monospace;
+        color: hsl(189, 41%, 97%);
+        border: none;
+        background-color: hsl(183, 100%, 15%);
+        border-radius: 0.5rem;
+        width: 7.55rem;
+    }
+    .active{
+        background-color: hsl(171,66,45);
+    }
+    .output{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        background: hsl(183, 100%, 15%);
+        padding: 2rem;
+        color: hsl(185, 41%, 84%);
+        border-radius: 1rem;
+        .tipamt,.totamt{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .val{
+                font-size: 30px;
+                font-weight: normal;
+            }
+            .info{
+                font-size: 18px;
+                p{
+                    opacity: 0.5;
+                }
+            }
+        }
+        .totamt{
+            padding-top: 2rem;
+        }
+        .reset{
+            border: none;
+            background: hsl(184, 14%, 56%);
+            height: 3rem;
+            border-radius: 0.5rem;
+            font-family: 'Space Mono', monospace;
+            font-weight: bold;
+            color: hsl(183, 100%, 15%);
+            font-size: 24px;
+        }
+        .reset:active{
+            transform: scale(0.99);
+        }
+    }
+}
+.pad{
+    padding: 0.5rem 0;
+}
+.attribution{
+    margin-top: 1rem;
+    background: hsl(189, 41%, 97%);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@media screen and (max-width:900px){
+    main{
+        width: 100vw;
+        min-height: 100vh;
+        margin-top: 15rem;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,1fr);
+        width: 100%;
+    }
+
+}

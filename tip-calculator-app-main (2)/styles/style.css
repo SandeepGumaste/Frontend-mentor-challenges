@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  font-family: 'Space Mono', monospace;
+  background: #c2e2e5;
+  color: #5e7a7d;
+  font-weight: bold;
+  background-image: url(/tip-calculator-app-main/images/logo.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 3rem;
+  width: 100vw;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+  height: 60%;
+  padding-top: 3rem;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  font-size: 18px;
+}
+
+.container .ip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .ip input {
+  text-align: right;
+  padding: 1rem;
+  font-size: 18px;
+  font-family: 'Space Mono', monospace;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  background-color: #f1f9f9;
+  border-radius: 0.5rem;
+  color: #00494d;
+}
+
+.container .ip #bill {
+  background-image: url("/tip-calculator-app-main/images/icon-dollar.svg");
+  background-repeat: no-repeat;
+  background-position: 1rem 50%;
+}
+
+.container .ip #peep {
+  background-image: url("/tip-calculator-app-main/images/icon-person.svg");
+  background-repeat: no-repeat;
+  background-position: 1rem 50%;
+}
+
+.container .inp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 2rem;
+}
+
+.container .inp .cust {
+  text-align: center;
+  background-color: #f1f9f9;
+  color: #00494d;
+  width: 7.55rem;
+}
+
+.container .inp .cust::-webkit-input-placeholder {
+  font-family: 'Space Mono', monospace;
+}
+
+.container .inp .cust:-ms-input-placeholder {
+  font-family: 'Space Mono', monospace;
+}
+
+.container .inp .cust::-ms-input-placeholder {
+  font-family: 'Space Mono', monospace;
+}
+
+.container .inp .cust::placeholder {
+  font-family: 'Space Mono', monospace;
+}
+
+.container .tip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  grid-gap: 1rem;
+}
+
+.container .btn {
+  padding: 1rem;
+  font-family: 'Space Mono', monospace;
+  color: #f4fafa;
+  border: none;
+  background-color: #00494d;
+  border-radius: 0.5rem;
+  width: 7.55rem;
+}
+
+.container .active {
+  background-color: #27bea8;
+}
+
+.container .output {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #00494d;
+  padding: 2rem;
+  color: #c5e4e7;
+  border-radius: 1rem;
+}
+
+.container .output .tipamt, .container .output .totamt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .output .tipamt .val, .container .output .totamt .val {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.container .output .tipamt .info, .container .output .totamt .info {
+  font-size: 18px;
+}
+
+.container .output .tipamt .info p, .container .output .totamt .info p {
+  opacity: 0.5;
+}
+
+.container .output .totamt {
+  padding-top: 2rem;
+}
+
+.container .output .reset {
+  border: none;
+  background: #7f9c9f;
+  height: 3rem;
+  border-radius: 0.5rem;
+  font-family: 'Space Mono', monospace;
+  font-weight: bold;
+  color: #00494d;
+  font-size: 24px;
+}
+
+.container .output .reset:active {
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
+}
+
+.pad {
+  padding: 0.5rem 0;
+}
+
+.attribution {
+  margin-top: 1rem;
+  background: #f4fafa;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    width: 100vw;
+    min-height: 100vh;
+    margin-top: 15rem;
+  }
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
