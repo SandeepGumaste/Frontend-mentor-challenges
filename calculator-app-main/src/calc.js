@@ -4,7 +4,7 @@ const screen = document.getElementById('screen');
 const numberBtn = document.querySelectorAll('.number');
 const operationBtn = document.querySelectorAll('.operator');
 const deleteBtn = document.getElementById('del-btn');
-
+const decimal = document.getElementById('decimal');
 
 let variables = ['',''];
 let operator = '';
@@ -27,12 +27,16 @@ function updateScreen(){
 function del(){
     if(variables[id].length>0){
         variables[id]= variables[id].substr(0,variables[id].length-1);
+        console.log(variables)
         updateScreen();
     }
 }
 
 function calculate(){
-    var res = eval(variables[0]+operator+variables[1]);
+    let res = eval(variables[0]+operator+variables[1]);
+    res = res.toString();
+    res.indexOf('.')>0?res=res.substr(0,9):res=res.substr(0,8);
+    res=parseFloat(res);
     operator='';
     variables[1]='';
     variables[0]=res;
@@ -62,6 +66,7 @@ operationBtn.forEach(btn=>{
         if(variables[0]===''&& screen.innerText!=='0'){
             variables[0]= screen.innerText;
         }
+        decimal.disabled = false;
         id++;
         switch(btn.innerText){
             case '+':
@@ -74,5 +79,7 @@ operationBtn.forEach(btn=>{
 
         }
     })
-    // console.log('variables: ', variables, ' id: ',id, ' operator: ', operator );
+})
+decimal.addEventListener('click',()=>{
+    decimal.disabled = true;
 })
