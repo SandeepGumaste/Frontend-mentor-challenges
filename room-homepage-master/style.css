@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  font-family: 'Spartan', sans-serif;
+  background: white;
+  position: relative;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+body p {
+  color: #a1a1a1;
+  font-size: 0.72rem;
+  font-weight: 500;
+  line-height: 1.3rem;
+  text-align: left;
+}
+
+body h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+body h2 {
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+
+body h3 {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.4rem;
+  padding-bottom: 1rem;
+}
+
+body nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  padding-top: 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+body nav button {
+  background: none;
+  border: none;
+}
+
+body nav .before {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1.5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body nav .before .logo {
+  margin-right: 45%;
+}
+
+body nav .ham-open {
+  display: none;
+}
+
+body nav .ham-open .overlay {
+  height: 200vh;
+  background: #454545;
+  opacity: 0.5;
+}
+
+body nav .after {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+  margin-top: -4.3rem;
+  height: 15vh;
+}
+
+body nav .after ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: lowercase;
+  width: 70vw;
+  font-weight: 700;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body nav .after ul a {
+  text-decoration: none;
+  color: #000;
+}
+
+.hero-bg {
+  background-image: url("./images/mobile-image-hero-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 22.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.hero-bg .arrow-btn {
+  background: black;
+  height: 3.5rem;
+  width: 3.5rem;
+  border: none;
+}
+
+.hero-bg .arrow-btn img {
+  height: 1rem;
+}
+
+.hero-bg .arrow-btn:hover {
+  background: #454545;
+}
+
+.hero-bg .arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #000;
+  width: 7rem;
+  height: 3.5rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info {
+  height: 18rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 4rem 2rem;
+}
+
+.info .shop {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about img {
+  width: 100%;
+}
+
+.about div {
+  padding: 3rem 2rem;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Room homepage</title>
+</head>
+<body>
+  <nav>
+    <div class="before">
+      <button class="ham" id="ham" onclick="hamClick()">
+        <img src="./images/icon-hamburger.svg" alt="ham">
+      </button>
+      <img src="./images/logo.svg" alt="logo" class="logo">
+    </div>
+    <div class="ham-open" id="open">
+      <div class="after">
+        <button id="close" onclick="closeClick()">
+          <img src="./images/icon-close.svg" alt="close">
+        </button>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="overlay">
+
+      </div>
+    </div>
+    
+  </nav>
+  <section>
+    <div class="hero-bg" id="hero">
+      <div class="arrows">
+        <button id="left-arrow" onclick="heroChangeLeft()" class="arrow-btn">
+          <img src="./images/icon-angle-left.svg" alt="left">
+        </button>
+        <button id="right-arrow" onclick="heroChangeRight()" class="arrow-btn">
+          <img src="./images/icon-angle-right.svg" alt="right">
+        </button>
+      </div>
+    </div>
+
+    <div class="info">
+      <div>
+        <h1 id="headCount">Discover innovative ways to decorate</h1>
+        <p id="pgraph">
+          We provide unmatched quality, comfort, and style for property owners across the country. 
+          Our experts combine form and function in bringing your vision to life. Create a room in your 
+          own style with our collection and make your property a reflection of you and what you love.
+        </p>
+      </div>
+      
+      <div class="shop">
+        <h2>Shop Now</h2>
+        <img src="./images/icon-arrow.svg" alt="arrow">
+      </div>
+    </div>
+  </section>
+  <section class="about">
+    <img src="./images/image-about-dark.jpg" alt="dark">
+    <div>
+      <h3>About our furniture</h3>
+      <p>
+        Our multifunctional collection blends design and function to suit your individual taste.
+        Make each room unique, or pick a cohesive theme that best express your interests and what
+        inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+        or anything in between. Product specialists are available to help you create your dream space.
+      </p>
+    </div>
+    <img src="./images/image-about-light.jpg" alt="light">
+  </section>
+  <script src="./script.js"></script>
+</body>
+</html>

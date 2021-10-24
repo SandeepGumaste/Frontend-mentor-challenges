@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    font-family: 'Spartan', sans-serif;
+    background: white;
+    position: relative;
+    transition: all 0.5s ease;
+    p{
+        color: hsl(0, 0%, 63%);
+        font-size: 0.72rem;
+        font-weight: 500;
+        line-height: 1.3rem;
+        text-align: left;
+    }
+    h1{
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+    }
+    h2{
+        font-weight: 500;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+    }
+    h3{
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        font-weight: 600;
+        letter-spacing: 0.4rem;
+        padding-bottom: 1rem;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        padding-top: 3rem;
+        align-items: center;
+        width: 100vw;
+        overflow-x: hidden;
+        
+        button{
+            background: none;
+            border: none;
+        }
+        .before{
+            display: flex;
+            width: 90%;
+            align-items: center;
+            margin-left: 1.5rem;
+            justify-content: space-between;
+            .logo{
+                margin-right: 45%;
+            }
+        }
+        .ham-open{
+            display: none;
+            .overlay{
+                height: 200vh;
+                background: hsl(0, 0%, 27%);
+                opacity: 0.5;
+            }
+        }
+
+        .after{
+            // position: absolute;
+            width: 100vw;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background: white;
+            margin-top: -4.3rem;
+
+            height: 15vh;
+            ul{
+                list-style: none;
+                display: flex;
+                text-transform: lowercase;
+                width: 70vw;
+                font-weight: 700;
+                justify-content: space-between;
+                a{
+                    text-decoration: none;
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+.hero-bg{
+    background-image: url('./images/mobile-image-hero-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 22.5rem;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    .arrow-btn{
+        background: black;
+        height: 3.5rem;
+        width: 3.5rem;
+        border: none;
+        img{
+            height: 1rem;
+        }
+    }
+    .arrow-btn:hover{
+        background:  hsl(0, 0%, 27%);
+    }
+    .arrows{
+        display: flex;
+        background: #000;
+        width: 7rem;
+        height: 3.5rem;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+}
+.info{
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    .shop{
+        margin-top: 1rem;
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.about{
+    img{
+        width: 100%;
+    }
+    div{
+        padding: 3rem 2rem;
+
+    }
+}
