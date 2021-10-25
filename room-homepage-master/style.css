@@ -224,6 +224,9 @@ body nav .after ul a {
     display: -ms-flexbox;
     display: flex;
   }
+  body nav .ham-open .overlay {
+    display: none;
+  }
   body nav .ham-open #close {
     display: none;
   }
