@@ -223,6 +223,7 @@ body nav .after ul a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    height: 20vh;
   }
   body nav .ham-open #close {
     display: none;
