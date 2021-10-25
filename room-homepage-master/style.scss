@@ -10,7 +10,7 @@ body{
     transition: all 0.5s ease;
     p{
         color: hsl(0, 0%, 63%);
-        font-size: 0.8rem;
+        font-size: 0.72rem;
         font-weight: 500;
         line-height: 1.3rem;
         text-align: left;
@@ -156,9 +156,6 @@ body{
             }
             .ham-open{
                 display: flex;
-                .overlay{
-                    display: none;
-                }
                 #close{
                     display: none;
                 }
@@ -204,7 +201,9 @@ body{
                 h1{
                     font-size: 2.4rem;
                 }
-
+                p{
+                    font-size: 0.8rem;
+                }
 
             }
             .shop{
@@ -257,50 +256,4 @@ body{
         }
     }
     
-}
-@media only screen and (min-width: 1500px){
-
-    .first{
-        .info{
- 
-            div{
-                h1{
-                    padding: 3rem 3rem 0 3rem;
-                    font-size: 3rem;
-                }
-                p{
-                    font-size: 1rem;
-                    padding: 0 3rem 3rem 3rem ;
-                }
-                padding-bottom: 2rem;
-            }
-            .shop{
-                
-                h2{
-                    padding-left: 3rem;
-                    font-size: 1.5rem;
-                }
-                img{
-                    width: 5rem;
-                }
-            }
-   
-    
-        }
-
-
-    }
-    .about{
-        div{
-            padding-top: 5rem;
-            padding-left: 2rem;
-            padding-right: 2rem;
-            h3{
-                font-size: 1.5rem;
-            }
-            p{
-                font-size: 1rem;
-            }
-        }
-    }
 }
