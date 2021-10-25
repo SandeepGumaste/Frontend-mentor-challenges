@@ -69,6 +69,9 @@ body{
 
         .after{
             // position: absolute;
+            .logo{
+                display: none;
+            }
             width: 100vw;
             display: flex;
             justify-content: space-around;
@@ -93,7 +96,7 @@ body{
     }
 }
 .hero-bg{
-    background-image: url('./images/mobile-image-hero-1.jpg');
+    background-image: url('./images/desktop-image-hero-1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 22.5rem;
@@ -145,7 +148,44 @@ body{
     }
 }
 @media only screen and (min-width: 768px){
-    
+    body{
+        height: 100vh;
+        nav{
+            .before{
+                display: none;
+            }
+            .ham-open{
+                display: flex;
+                #close{
+                    display: none;
+                }
+                .after{
+                    padding: 3rem 0 ;
+                    background: none;
+                    justify-content: start;
+                    .logo{
+                        display: inline;
+                        margin-left: 4rem;
+                        width: 5rem;
+                    }
+                    ul{
+                        justify-content: start;
+                        li{
+                            margin-left: 3rem;
+                        }
+                    }
+                    a{
+                        color: white;
+                        font-weight: 600;
+                        padding-bottom: 0.5rem;
+                    }
+                    a:hover{
+                        border-bottom: 5px solid white;
+                    }
+                }
+            }
+        }
+    }
     .first{
         display: flex;
         overflow: hidden;
@@ -215,4 +255,5 @@ body{
             }
         }
     }
+    
 }
